@@ -11,13 +11,7 @@ export const AdminProductPage = () => {
 
   const navigate = useNavigate();
 
-  const {
-    isLoading,
-    data: product,
-    isError,
-    error,
-    mutation,
-  } = useProduct(id || "");
+  const { isLoading, data: product, isError, mutation } = useProduct(id || "");
 
   const title = id === "new" ? "Nuevo producto" : "Editar producto";
   const subtitle =

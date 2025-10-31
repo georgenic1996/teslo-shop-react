@@ -1,6 +1,6 @@
 import React, { useRef, type KeyboardEvent } from "react";
 import { Search, Bell, MessageSquare, Settings } from "lucide-react";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 export const AdminHeader: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
